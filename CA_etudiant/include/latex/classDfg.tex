@@ -1,0 +1,105 @@
+\hypertarget{classDfg}{
+\section{Dfg Class Reference}
+\label{classDfg}\index{Dfg@{Dfg}}
+}
+
+
+class representing a \hyperlink{classDfg}{Dfg} of a Basic block, a data flow graph which will be used to calculate the critical path and schedule code  
+
+
+{\ttfamily \#include $<$Dfg.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDfg_afea85053fd9702a5040dd0c57c7bb49a}{
+\hyperlink{classDfg_afea85053fd9702a5040dd0c57c7bb49a}{Dfg} (int)}
+\label{classDfg_afea85053fd9702a5040dd0c57c7bb49a}
+
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classDfg}{Dfg} given the number of instructions. \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_aea8238bc912efa232319120cb1021fc1}{
+\hyperlink{classDfg_aea8238bc912efa232319120cb1021fc1}{Dfg} (\hyperlink{classBasic__block}{Basic\_\-block} $\ast$)}
+\label{classDfg_aea8238bc912efa232319120cb1021fc1}
+
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classDfg}{Dfg} given a basic block. \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_a1422059d38caedf1ed3897a6f89109d8}{
+\hyperlink{classDfg_a1422059d38caedf1ed3897a6f89109d8}{$\sim$Dfg} ()}
+\label{classDfg_a1422059d38caedf1ed3897a6f89109d8}
+
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{classDfg}{Dfg}. \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_a32426a0b87ae751c5a43a00629bde5e5}{
+void \hyperlink{classDfg_a32426a0b87ae751c5a43a00629bde5e5}{build\_\-dfg} (\hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$, bool)}
+\label{classDfg_a32426a0b87ae751c5a43a00629bde5e5}
+
+\begin{DoxyCompactList}\small\item\em Build the \hyperlink{classDfg}{Dfg}, when you call this method you have to affect the fisrt parameter to NULL and the second to true. \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_a19e39ead57755ba83008c3938c2b4c5d}{
+void \hyperlink{classDfg_a19e39ead57755ba83008c3938c2b4c5d}{display} (\hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$, bool)}
+\label{classDfg_a19e39ead57755ba83008c3938c2b4c5d}
+
+\begin{DoxyCompactList}\small\item\em Display the \hyperlink{classDfg}{Dfg}, when you call this method you have to affect the fisrt parameter to NULL and the second to true. \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_a2598772fa5761e77dcb975048775602b}{
+void \hyperlink{classDfg_a2598772fa5761e77dcb975048775602b}{restitute} (\hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$, string const, bool)}
+\label{classDfg_a2598772fa5761e77dcb975048775602b}
+
+\begin{DoxyCompactList}\small\item\em restitute the \hyperlink{classDfg}{Dfg}, when you call this method you have to affect the fisrt parameter to NULL and the third to true \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_a1a6dc2d38709c345177eec0d37ec43e2}{
+bool \hyperlink{classDfg_a1a6dc2d38709c345177eec0d37ec43e2}{read\_\-test} ()}
+\label{classDfg_a1a6dc2d38709c345177eec0d37ec43e2}
+
+\begin{DoxyCompactList}\small\item\em test if all node have been read \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_ae5d6bbc31290e511657663c1c58ac2ce}{
+void \hyperlink{classDfg_ae5d6bbc31290e511657663c1c58ac2ce}{comput\_\-critical\_\-path} (\hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$, bool)}
+\label{classDfg_ae5d6bbc31290e511657663c1c58ac2ce}
+
+\begin{DoxyCompactList}\small\item\em comput the critical path of the \hyperlink{classDfg}{Dfg}, when you call this method you have to affect the fisrt parameter to NULL and the second to true \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_a9ae0a88ce5e401ff57c03f3c0aefbb2c}{
+void \hyperlink{classDfg_a9ae0a88ce5e401ff57c03f3c0aefbb2c}{scheduling} ()}
+\label{classDfg_a9ae0a88ce5e401ff57c03f3c0aefbb2c}
+
+\begin{DoxyCompactList}\small\item\em order the instructions in the basic block according to an algorithm list \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_ac061a080c0ce6749e7e4bdcc00e58cda}{
+list$<$ \hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$ $>$ \hyperlink{classDfg_ac061a080c0ce6749e7e4bdcc00e58cda}{no\_\-freezing\_\-cycle} (list$<$ \hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$ $>$)}
+\label{classDfg_ac061a080c0ce6749e7e4bdcc00e58cda}
+
+\begin{DoxyCompactList}\small\item\em get the instructions without freezing cycle \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_aedcfcf125b8558cb52573a6f3386b7e1}{
+list$<$ \hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$ $>$ \hyperlink{classDfg_aedcfcf125b8558cb52573a6f3386b7e1}{greater\_\-weight} (list$<$ \hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$ $>$)}
+\label{classDfg_aedcfcf125b8558cb52573a6f3386b7e1}
+
+\begin{DoxyCompactList}\small\item\em get the instructions with the biggest weight \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_a95e835dd5f2d7b54c4905a1c348906c1}{
+list$<$ \hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$ $>$ \hyperlink{classDfg_a95e835dd5f2d7b54c4905a1c348906c1}{more\_\-sucessor} (list$<$ \hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$ $>$)}
+\label{classDfg_a95e835dd5f2d7b54c4905a1c348906c1}
+
+\begin{DoxyCompactList}\small\item\em get the instructions with the biggest number of successor \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_a2b62d89b71950a4da07369c4d9469050}{
+list$<$ \hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$ $>$ \hyperlink{classDfg_a2b62d89b71950a4da07369c4d9469050}{more\_\-descendant} (list$<$ \hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$ $>$)}
+\label{classDfg_a2b62d89b71950a4da07369c4d9469050}
+
+\begin{DoxyCompactList}\small\item\em get the instructions with the biggest number of descedant \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_ac5ef9b24f6fe84f73ffeb390fd514c03}{
+list$<$ \hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$ $>$ \hyperlink{classDfg_ac5ef9b24f6fe84f73ffeb390fd514c03}{longer\_\-latency} (list$<$ \hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$ $>$)}
+\label{classDfg_ac5ef9b24f6fe84f73ffeb390fd514c03}
+
+\begin{DoxyCompactList}\small\item\em get the instructions with the biggest latency \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_a0c8eff92703a7bdd07c7d13595685726}{
+list$<$ \hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$ $>$ \hyperlink{classDfg_a0c8eff92703a7bdd07c7d13595685726}{original\_\-order} (list$<$ \hyperlink{classNode__dfg}{Node\_\-dfg} $\ast$ $>$)}
+\label{classDfg_a0c8eff92703a7bdd07c7d13595685726}
+
+\begin{DoxyCompactList}\small\item\em get the first instruction in the original order \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_a185255729c922752e1d6bcfdbc098461}{
+void \hyperlink{classDfg_a185255729c922752e1d6bcfdbc098461}{scheduling\_\-BB} (\hyperlink{classBasic__block}{Basic\_\-block} $\ast$)}
+\label{classDfg_a185255729c922752e1d6bcfdbc098461}
+
+\begin{DoxyCompactList}\small\item\em modify the Basic block with the new scheduling \item\end{DoxyCompactList}\item 
+\hypertarget{classDfg_a568f4d0d48fc38f8fcdc4944b8d48740}{
+int \hyperlink{classDfg_a568f4d0d48fc38f8fcdc4944b8d48740}{get\_\-critical\_\-path} ()}
+\label{classDfg_a568f4d0d48fc38f8fcdc4944b8d48740}
+
+\begin{DoxyCompactList}\small\item\em returns the highest weigth of nodes \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class representing a \hyperlink{classDfg}{Dfg} of a Basic block, a data flow graph which will be used to calculate the critical path and schedule code 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Dfg_8h}{Dfg.h}\end{DoxyCompactItemize}

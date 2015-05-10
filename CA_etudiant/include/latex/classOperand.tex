@@ -1,0 +1,80 @@
+\hypertarget{classOperand}{
+\section{Operand Class Reference}
+\label{classOperand}\index{Operand@{Operand}}
+}
+
+
+Abstract class representing an operand.  
+
+
+{\ttfamily \#include $<$Operand.h$>$}Inheritance diagram for Operand::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classOperand}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOperand_aa6ef1ffa183381edb413f9b93782a67b}{
+virtual \hyperlink{classOperand_aa6ef1ffa183381edb413f9b93782a67b}{$\sim$Operand} ()}
+\label{classOperand_aa6ef1ffa183381edb413f9b93782a67b}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \item\end{DoxyCompactList}\item 
+\hypertarget{classOperand_a2bf3ad8b34d39cb35ff743ffcc0f4675}{
+virtual string \hyperlink{classOperand_a2bf3ad8b34d39cb35ff743ffcc0f4675}{get\_\-op} ()=0}
+\label{classOperand_a2bf3ad8b34d39cb35ff743ffcc0f4675}
+
+\begin{DoxyCompactList}\small\item\em Get the operand value virtual accessor of the operand. \item\end{DoxyCompactList}\item 
+\hypertarget{classOperand_a0895c39d7b97ea56f074d242e8232c78}{
+virtual void \hyperlink{classOperand_a0895c39d7b97ea56f074d242e8232c78}{set\_\-op} (string)=0}
+\label{classOperand_a0895c39d7b97ea56f074d242e8232c78}
+
+\begin{DoxyCompactList}\small\item\em set the operand value virtual setter of the operand \item\end{DoxyCompactList}\item 
+virtual t\_\-OpType \hyperlink{classOperand_afd469e305a467e2574f34ac9bd6c62b0}{get\_\-op\_\-type} ()=0
+\begin{DoxyCompactList}\small\item\em get the operator type virtual accessor of accessor \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classOperand_a28aed96d5fafee66be81c30c1435ad00}{to\_\-string} ()=0
+\begin{DoxyCompactList}\small\item\em virtual tostring \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOperand_af70a183445064a0106d41dfeea681790}{
+string {\bfseries \_\-oper}}
+\label{classOperand_af70a183445064a0106d41dfeea681790}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class representing an operand. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classOperand_afd469e305a467e2574f34ac9bd6c62b0}{
+\index{Operand@{Operand}!get\_\-op\_\-type@{get\_\-op\_\-type}}
+\index{get\_\-op\_\-type@{get\_\-op\_\-type}!Operand@{Operand}}
+\subsubsection[{get\_\-op\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}virtual t\_\-OpType Operand::get\_\-op\_\-type ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classOperand_afd469e305a467e2574f34ac9bd6c62b0}
+
+
+get the operator type virtual accessor of accessor \begin{DoxyReturn}{Returns}
+return the \hyperlink{classOperand}{Operand} type as enum 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classOPExpression_a06f8902130516437d5d93c43a5efcbd2}{OPExpression}, \hyperlink{classOPImmediate_aed01353798ae57936a9f77dd05eafa88}{OPImmediate}, \hyperlink{classOPLabel_a1a6ec701c549a6475d44ffcced1c23b5}{OPLabel}, and \hyperlink{classOPRegister_a1be03d6e6422510a1fd12d1f13dfd601}{OPRegister}.\hypertarget{classOperand_a28aed96d5fafee66be81c30c1435ad00}{
+\index{Operand@{Operand}!to\_\-string@{to\_\-string}}
+\index{to\_\-string@{to\_\-string}!Operand@{Operand}}
+\subsubsection[{to\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}virtual string Operand::to\_\-string ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classOperand_a28aed96d5fafee66be81c30c1435ad00}
+
+
+virtual tostring \begin{DoxyReturn}{Returns}
+return the Object as string 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classOPExpression_a0a6ee03eb083791028eeae021f4ff47b}{OPExpression}, \hyperlink{classOPImmediate_a12bc613de3bff73ead8632dafd8050a0}{OPImmediate}, \hyperlink{classOPLabel_a51c4e8f45422f03edcb71d472cf5e973}{OPLabel}, and \hyperlink{classOPRegister_a9f55bdff75224fb18973a9e913a4022f}{OPRegister}.
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Operand_8h}{Operand.h}\end{DoxyCompactItemize}

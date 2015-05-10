@@ -1,0 +1,52 @@
+\hypertarget{_instruction_8h}{\section{Instruction.\+h File Reference}
+\label{_instruction_8h}\index{Instruction.\+h@{Instruction.\+h}}
+}
+
+
+\hyperlink{class_instruction}{Instruction} class.  
+
+
+{\ttfamily \#include $<$Operand.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$O\+P\+Expression.\+h$>$}\\*
+{\ttfamily \#include $<$O\+P\+Immediate.\+h$>$}\\*
+{\ttfamily \#include $<$O\+P\+Label.\+h$>$}\\*
+{\ttfamily \#include $<$Line.\+h$>$}\\*
+{\ttfamily \#include $<$O\+P\+Register.\+h$>$}\\*
+{\ttfamily \#include $<$Enum\+\_\+type.\+h$>$}\\*
+{\ttfamily \#include $<$list$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structdep}{dep}
+\item 
+class \hyperlink{class_instruction}{Instruction}
+\begin{DoxyCompactList}\small\item\em class representing an instruction which herited by \hyperlink{class_line}{Line} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_instruction_8h_a8b4a12440add75fe3ebf3a5d3ed4ee8e}{\hyperlink{class_instruction}{Instruction} $\ast$ \hyperlink{_instruction_8h_a8b4a12440add75fe3ebf3a5d3ed4ee8e}{get\+Inst} (\hyperlink{class_line}{Line} $\ast$l)}\label{_instruction_8h_a8b4a12440add75fe3ebf3a5d3ed4ee8e}
+
+\begin{DoxyCompactList}\small\item\em returns the instruction associated to the line, if the line is an instruction, N\+U\+L\+L otherwise \end{DoxyCompactList}\item 
+int \hyperlink{_instruction_8h_a51ba1f2ef8910a3a40a3bf9923286e7c}{delai} (t\+\_\+\+Inst t1, t\+\_\+\+Inst t2)
+\begin{DoxyCompactList}\small\item\em retourne le délai induit par une dépendance R\+A\+W i1 -\/$>$ i2 avec i1 de type t1 et i2 de type t2 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_instruction}{Instruction} class. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_instruction_8h_a51ba1f2ef8910a3a40a3bf9923286e7c}{\index{Instruction.\+h@{Instruction.\+h}!delai@{delai}}
+\index{delai@{delai}!Instruction.\+h@{Instruction.\+h}}
+\subsubsection[{delai}]{\setlength{\rightskip}{0pt plus 5cm}int delai (
+\begin{DoxyParamCaption}
+\item[{t\+\_\+\+Inst}]{t1, }
+\item[{t\+\_\+\+Inst}]{t2}
+\end{DoxyParamCaption}
+)}}\label{_instruction_8h_a51ba1f2ef8910a3a40a3bf9923286e7c}
+
+
+retourne le délai induit par une dépendance R\+A\+W i1 -\/$>$ i2 avec i1 de type t1 et i2 de type t2 
+

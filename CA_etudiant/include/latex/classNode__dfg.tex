@@ -1,0 +1,85 @@
+\hypertarget{classNode__dfg}{
+\section{Node\_\-dfg Class Reference}
+\label{classNode__dfg}\index{Node\_\-dfg@{Node\_\-dfg}}
+}
+
+
+class representing a node of data flow graph  
+
+
+{\ttfamily \#include $<$Node\_\-dfg.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classNode__dfg_ac9b79961aaadf29eecd03b227b4c0875}{
+\hyperlink{classNode__dfg_ac9b79961aaadf29eecd03b227b4c0875}{Node\_\-dfg} (\hyperlink{classInstruction}{Instruction} $\ast$)}
+\label{classNode__dfg_ac9b79961aaadf29eecd03b227b4c0875}
+
+\begin{DoxyCompactList}\small\item\em Constructor of \hyperlink{classNode__dfg}{Node\_\-dfg}. \item\end{DoxyCompactList}\item 
+\hypertarget{classNode__dfg_a0a2a7c4634ad6802e7c69ab0d95957fa}{
+\hyperlink{classNode__dfg_a0a2a7c4634ad6802e7c69ab0d95957fa}{$\sim$Node\_\-dfg} ()}
+\label{classNode__dfg_a0a2a7c4634ad6802e7c69ab0d95957fa}
+
+\begin{DoxyCompactList}\small\item\em Destructor of \hyperlink{classNode__dfg}{Node\_\-dfg}. \item\end{DoxyCompactList}\item 
+\hypertarget{classNode__dfg_ad7344d9aa8b8bef5acd1625c2c277a8b}{
+\hyperlink{structArc}{Arc} $\ast$ \hyperlink{classNode__dfg_ad7344d9aa8b8bef5acd1625c2c277a8b}{get\_\-succ} (int)}
+\label{classNode__dfg_ad7344d9aa8b8bef5acd1625c2c277a8b}
+
+\begin{DoxyCompactList}\small\item\em get the first successor \item\end{DoxyCompactList}\item 
+\hypertarget{classNode__dfg_aa281cead75cafbfd28adefdad4aa4c45}{
+int \hyperlink{classNode__dfg_aa281cead75cafbfd28adefdad4aa4c45}{get\_\-nbr\_\-succ} ()}
+\label{classNode__dfg_aa281cead75cafbfd28adefdad4aa4c45}
+
+\begin{DoxyCompactList}\small\item\em get the number of successor \item\end{DoxyCompactList}\item 
+\hypertarget{classNode__dfg_a8f20c21a0ffb2e224cc426148362c249}{
+\hyperlink{classInstruction}{Instruction} $\ast$ \hyperlink{classNode__dfg_a8f20c21a0ffb2e224cc426148362c249}{get\_\-instruction} ()}
+\label{classNode__dfg_a8f20c21a0ffb2e224cc426148362c249}
+
+\begin{DoxyCompactList}\small\item\em get the \hyperlink{classInstruction}{Instruction} \item\end{DoxyCompactList}\item 
+\hypertarget{classNode__dfg_ab88d883fccbd037e4260f10d59b6e425}{
+void \hyperlink{classNode__dfg_ab88d883fccbd037e4260f10d59b6e425}{set\_\-succ} (\hyperlink{structArc}{Arc} $\ast$)}
+\label{classNode__dfg_ab88d883fccbd037e4260f10d59b6e425}
+
+\begin{DoxyCompactList}\small\item\em set the first successor \item\end{DoxyCompactList}\item 
+\hypertarget{classNode__dfg_a83747917d9c87b11633779731bcda162}{
+void \hyperlink{classNode__dfg_a83747917d9c87b11633779731bcda162}{set\_\-instruction} (\hyperlink{classInstruction}{Instruction} $\ast$)}
+\label{classNode__dfg_a83747917d9c87b11633779731bcda162}
+
+\begin{DoxyCompactList}\small\item\em set the \hyperlink{classInstruction}{Instruction} \item\end{DoxyCompactList}\item 
+\hypertarget{classNode__dfg_af23f48b1521a90178cc5c9a59da3ab3c}{
+void \hyperlink{classNode__dfg_af23f48b1521a90178cc5c9a59da3ab3c}{set\_\-weight} (int)}
+\label{classNode__dfg_af23f48b1521a90178cc5c9a59da3ab3c}
+
+\begin{DoxyCompactList}\small\item\em set the weight \item\end{DoxyCompactList}\item 
+\hypertarget{classNode__dfg_a561e80f51cb9a71b22f22e8d2e6685de}{
+int \hyperlink{classNode__dfg_a561e80f51cb9a71b22f22e8d2e6685de}{get\_\-weight} ()}
+\label{classNode__dfg_a561e80f51cb9a71b22f22e8d2e6685de}
+
+\begin{DoxyCompactList}\small\item\em get the weight \item\end{DoxyCompactList}\item 
+\hypertarget{classNode__dfg_a37d72db9e82eb9bb52247069fe358cfe}{
+void \hyperlink{classNode__dfg_a37d72db9e82eb9bb52247069fe358cfe}{set\_\-descendant} (int)}
+\label{classNode__dfg_a37d72db9e82eb9bb52247069fe358cfe}
+
+\begin{DoxyCompactList}\small\item\em set the number of descendant \item\end{DoxyCompactList}\item 
+\hypertarget{classNode__dfg_a8001932f560722545c64e17ae8a37dca}{
+int \hyperlink{classNode__dfg_a8001932f560722545c64e17ae8a37dca}{get\_\-nb\_\-desc} ()}
+\label{classNode__dfg_a8001932f560722545c64e17ae8a37dca}
+
+\begin{DoxyCompactList}\small\item\em get the number of descendant \item\end{DoxyCompactList}\item 
+\hypertarget{classNode__dfg_a6d7e50cba649aad4a27e802660778f82}{
+void \hyperlink{classNode__dfg_a6d7e50cba649aad4a27e802660778f82}{set\_\-desc} (int)}
+\label{classNode__dfg_a6d7e50cba649aad4a27e802660778f82}
+
+\begin{DoxyCompactList}\small\item\em set one descendant \item\end{DoxyCompactList}\item 
+\hypertarget{classNode__dfg_adb01eca7498fbdd4f3d2d123e2212ea6}{
+int \hyperlink{classNode__dfg_adb01eca7498fbdd4f3d2d123e2212ea6}{get\_\-desc} (int)}
+\label{classNode__dfg_adb01eca7498fbdd4f3d2d123e2212ea6}
+
+\begin{DoxyCompactList}\small\item\em get one descendant \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class representing a node of data flow graph 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Node__dfg_8h}{Node\_\-dfg.h}\end{DoxyCompactItemize}

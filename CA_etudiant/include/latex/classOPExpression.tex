@@ -1,0 +1,86 @@
+\hypertarget{classOPExpression}{
+\section{OPExpression Class Reference}
+\label{classOPExpression}\index{OPExpression@{OPExpression}}
+}
+
+
+class representing an expression herited by \hyperlink{classOperand}{Operand}  
+
+
+{\ttfamily \#include $<$OPExpression.h$>$}Inheritance diagram for OPExpression::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classOPExpression}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOPExpression_a5784034daef8568869fe0bb5ecfbcdcf}{
+\hyperlink{classOPExpression_a5784034daef8568869fe0bb5ecfbcdcf}{OPExpression} (string)}
+\label{classOPExpression_a5784034daef8568869fe0bb5ecfbcdcf}
+
+\begin{DoxyCompactList}\small\item\em Constructor of the Expression class. \item\end{DoxyCompactList}\item 
+\hypertarget{classOPExpression_a5ea892d89208ccb593510ee63ef42a19}{
+virtual \hyperlink{classOPExpression_a5ea892d89208ccb593510ee63ef42a19}{$\sim$OPExpression} ()}
+\label{classOPExpression_a5ea892d89208ccb593510ee63ef42a19}
+
+\begin{DoxyCompactList}\small\item\em Destructor of the Expression class. \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classOPExpression_acf86deca614626b803bc3c29facbefef}{get\_\-op} ()
+\begin{DoxyCompactList}\small\item\em Get the operand value. \item\end{DoxyCompactList}\item 
+virtual t\_\-OpType \hyperlink{classOPExpression_a06f8902130516437d5d93c43a5efcbd2}{get\_\-op\_\-type} ()
+\begin{DoxyCompactList}\small\item\em get the operator type \item\end{DoxyCompactList}\item 
+virtual string \hyperlink{classOPExpression_a0a6ee03eb083791028eeae021f4ff47b}{to\_\-string} ()
+\begin{DoxyCompactList}\small\item\em tostring \item\end{DoxyCompactList}\item 
+\hypertarget{classOPExpression_a3cfeacf4f76611d374be3caa9de80a05}{
+virtual void \hyperlink{classOPExpression_a3cfeacf4f76611d374be3caa9de80a05}{set\_\-op} (string)}
+\label{classOPExpression_a3cfeacf4f76611d374be3caa9de80a05}
+
+\begin{DoxyCompactList}\small\item\em set the operand value setter of the operand \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class representing an expression herited by \hyperlink{classOperand}{Operand} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classOPExpression_acf86deca614626b803bc3c29facbefef}{
+\index{OPExpression@{OPExpression}!get\_\-op@{get\_\-op}}
+\index{get\_\-op@{get\_\-op}!OPExpression@{OPExpression}}
+\subsubsection[{get\_\-op}]{\setlength{\rightskip}{0pt plus 5cm}virtual string OPExpression::get\_\-op ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classOPExpression_acf86deca614626b803bc3c29facbefef}
+
+
+Get the operand value. \begin{DoxyReturn}{Returns}
+return the string of the Expression 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classOperand_a2bf3ad8b34d39cb35ff743ffcc0f4675}{Operand}.\hypertarget{classOPExpression_a06f8902130516437d5d93c43a5efcbd2}{
+\index{OPExpression@{OPExpression}!get\_\-op\_\-type@{get\_\-op\_\-type}}
+\index{get\_\-op\_\-type@{get\_\-op\_\-type}!OPExpression@{OPExpression}}
+\subsubsection[{get\_\-op\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}virtual t\_\-OpType OPExpression::get\_\-op\_\-type ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classOPExpression_a06f8902130516437d5d93c43a5efcbd2}
+
+
+get the operator type \begin{DoxyReturn}{Returns}
+return the \hyperlink{classOperand}{Operand} type as enum 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classOperand_afd469e305a467e2574f34ac9bd6c62b0}{Operand}.\hypertarget{classOPExpression_a0a6ee03eb083791028eeae021f4ff47b}{
+\index{OPExpression@{OPExpression}!to\_\-string@{to\_\-string}}
+\index{to\_\-string@{to\_\-string}!OPExpression@{OPExpression}}
+\subsubsection[{to\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}virtual string OPExpression::to\_\-string ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classOPExpression_a0a6ee03eb083791028eeae021f4ff47b}
+
+
+tostring \begin{DoxyReturn}{Returns}
+return the Object as string 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classOperand_a28aed96d5fafee66be81c30c1435ad00}{Operand}.
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{OPExpression_8h}{OPExpression.h}\end{DoxyCompactItemize}
